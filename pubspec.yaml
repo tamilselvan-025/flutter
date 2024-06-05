@@ -1,0 +1,411 @@
+name: flutter_basics
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  another_flushbar: ^1.12.30
+  http: ^1.2.1
+  shared_preferences: ^2.2.3
+  fluttertoast: ^8.2.5
+  sqflite: ^2.3.3+1
+  provider: ^6.1.2
+  flame_splash_screen: ^0.3.0
+  flutter_bloc: ^8.1.5
+  encrypt_shared_preferences: ^0.7.1
+  image_picker: ^1.1.1
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.2
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - asset/images/
+    - D:/Training/Projects/AndroidStudio/flutter_basics/
+    - ios/
+    - ios/Runner/
+    - ios/Runner/Base.lproj/
+    - ios/Runner/Assets.xcassets/
+    - ios/Runner/Assets.xcassets/AppIcon.appiconset/
+    - ios/Runner/Assets.xcassets/LaunchImage.imageset/
+    - ios/Flutter/
+    - ios/RunnerTests/
+    - ios/Runner.xcodeproj/
+    - ios/Runner.xcodeproj/xcshareddata/
+    - ios/Runner.xcodeproj/xcshareddata/xcschemes/
+    - ios/Runner.xcodeproj/project.xcworkspace/
+    - ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/
+    - ios/Runner.xcworkspace/
+    - ios/Runner.xcworkspace/xcshareddata/
+    - lib/
+    - lib/assets/
+    - lib/assets/web_images/
+    - lib/assets/image_assets/
+    - lib/extras/
+    - lib/extras/card/
+    - lib/extras/chip/
+    - lib/extras/image/
+    - lib/extras/timer/
+    - lib/extras/ink_well/
+    - lib/extras/clip_r_rect/
+    - lib/extras/bottom_sheet/
+    - lib/extras/close_button/
+    - lib/extras/circle_avatar/
+    - lib/extras/splash_screen/
+    - lib/extras/future_builder/
+    - lib/extras/stream_builder/
+    - lib/extras/value_notifier/
+    - lib/extras/inherited_widget/
+    - lib/extras/stateful_builder/
+    - lib/extras/visibility_widget/
+    - lib/project/
+    - lib/project/signup/
+    - lib/project/signup/util/
+    - lib/project/you_tube/
+    - lib/project/notes_app/
+    - lib/project/notes_app/styles/
+    - lib/storage/
+    - lib/storage/future/
+    - lib/storage/future/http_response/
+    - lib/storage/factory/
+    - lib/storage/factory/design_pattern/
+    - lib/storage/factory/factory_constructor/
+    - lib/storage/database/
+    - lib/storage/shared_pref/
+    - lib/storage/web_services/
+    - lib/storage/web_services/url_paths/
+    - lib/storage/web_services/http_requests/
+    - lib/storage/web_services/http_requests/http_get/
+    - lib/storage/web_services/http_requests/http_put/
+    - lib/storage/web_services/http_requests/http_head/
+    - lib/storage/web_services/http_requests/http_post/
+    - lib/storage/web_services/http_requests/http_read/
+    - lib/storage/web_services/http_requests/http_delete/
+    - lib/storage/web_services/model_classes/
+    - lib/storage/web_services/api_service_handlers/
+    - lib/advanced/
+    - lib/advanced/bloc/
+    - lib/advanced/cubit/
+    - lib/advanced/cubit/counter_app/
+    - lib/advanced/cubit/colour_change/
+    - lib/advanced/streams/
+    - lib/advanced/provider/
+    - lib/advanced/provider/types/
+    - lib/advanced/provider/types/proxy_provider/
+    - lib/advanced/provider/types/proxy_provider/example_1/
+    - lib/advanced/provider/types/proxy_provider/example_2/
+    - lib/advanced/provider/types/future_provider/
+    - lib/advanced/provider/types/stream_provider/
+    - lib/advanced/provider/example_1/
+    - lib/advanced/provider/example_2/
+    - lib/advanced/provider/using_watch_and_read/
+    - lib/advanced/provider/consumer_and_selector/
+    - lib/practice/
+    - lib/practice/tab_bar/
+    - lib/practice/bottom_navigation_bar/
+    - lib/scaffold/
+    - lib/scaffold/navigation_drawer_with_appbar_actions/
+    - lib/stateful/
+    - lib/safe_area/
+    - lib/stateless/
+    - lib/debug_print/
+    - lib/key_problem/
+    - lib/key_problem/example_1/
+    - lib/design_style/
+    - lib/material_app/
+    - lib/material_app/routes/
+    - lib/material_app/routes/using_navigator/
+    - lib/material_app/routes/using_navigator/passing_value/
+    - lib/material_app/routes/using_navigator/until_functions/
+    - lib/material_app/routes/using_navigator/back_with_result/
+    - lib/material_app/routes/on_generate_and_unknown/
+    - lib/material_app/actions/
+    - lib/design_basics/
+    - lib/design_basics/color/
+    - lib/design_basics/style/
+    - lib/design_basics/style/text_style/
+    - lib/design_basics/style/button_style/
+    - lib/design_basics/utils/
+    - lib/design_basics/utils/border_radius/
+    - lib/design_basics/button/
+    - lib/design_basics/button/icon_button/
+    - lib/design_basics/button/text_button/
+    - lib/design_basics/button/drop_down_menu/
+    - lib/design_basics/button/elevated_button/
+    - lib/design_basics/button/outlined_button/
+    - lib/design_basics/button/drop_down_button/
+    - lib/design_basics/button/pop_up_menu_button/
+    - lib/design_basics/margin/
+    - lib/design_basics/padding/
+    - lib/design_basics/check_box/
+    - lib/design_basics/container/
+    - lib/design_basics/grid_view/
+    - lib/design_basics/list_view/
+    - lib/design_basics/list_view/controller/
+    - lib/design_basics/sized_box/
+    - lib/design_basics/text_field/
+    - lib/design_basics/text_field/controller/
+    - lib/design_basics/text_field/focus_node/
+    - lib/design_basics/text_field/scroll_physics/
+    - lib/design_basics/text_field/input_formatter/
+    - lib/design_basics/radio_button/
+    - lib/design_basics/text_form_field/
+    - lib/design_basics/columns_rows_wrap/
+    - lib/action_listener/
+    - lib/action_listener/listener/
+    - lib/action_listener/gesture_detector/
+    - lib/user_intimation/
+    - lib/user_intimation/progress_bar/
+    - lib/tasks_given_by_tl/
+    - lib/tasks_given_by_tl/alert_dialog/
+    - lib/tasks_given_by_tl/snackbar_on_top/
+    - lib/tasks_given_by_tl/encrypted_shared_preferences/
+    - lib/task_given_by_senior/
+    - lib/task_given_by_senior/future/
+    - lib/task_given_by_senior/future/infinite_list/
+    - lib/task_given_by_senior/future/blin_cube_service/
+    - lib/task_given_by_senior/alert_box/
+    - lib/task_given_by_senior/forza_demo/
+    - lib/task_given_by_senior/navigation/
+    - lib/task_given_by_senior/until_scaffold/
+    - lib/task_given_by_senior/until_scaffold/pages/
+    - lib/task_given_by_senior/dispose_method_use/
+    - lib/task_given_by_senior/blin_cube_profile_view/
+    - web/
+    - web/icons/
+    - test/
+    - .idea/
+    - .idea/libraries/
+    - .idea/codeStyles/
+    - .idea/dictionaries/
+    - .idea/runConfigurations/
+    - asset/
+    - linux/
+    - linux/flutter/
+    - linux/flutter/ephemeral/
+    - linux/flutter/ephemeral/.plugin_symlinks/
+    - linux/flutter/ephemeral/.plugin_symlinks/image_picker_linux/
+    - linux/flutter/ephemeral/.plugin_symlinks/image_picker_linux/lib/
+    - linux/flutter/ephemeral/.plugin_symlinks/image_picker_linux/test/
+    - linux/flutter/ephemeral/.plugin_symlinks/image_picker_linux/example/
+    - linux/flutter/ephemeral/.plugin_symlinks/image_picker_linux/example/lib/
+    - linux/flutter/ephemeral/.plugin_symlinks/image_picker_linux/example/linux/
+    - linux/flutter/ephemeral/.plugin_symlinks/image_picker_linux/example/linux/flutter/
+    - linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/
+    - linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/lib/
+    - linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/test/
+    - linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/
+    - linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/test/
+    - linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/include/
+    - linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/include/file_selector_linux/
+    - linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/example/
+    - linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/example/lib/
+    - linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/example/linux/
+    - linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/example/linux/flutter/
+    - linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/
+    - linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/lib/
+    - linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/lib/src/
+    - linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/test/
+    - linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/
+    - linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/lib/
+    - linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/linux/
+    - linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/linux/flutter/
+    - linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/test_driver/
+    - linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/integration_test/
+    - linux/flutter/ephemeral/.plugin_symlinks/shared_preferences_linux/
+    - linux/flutter/ephemeral/.plugin_symlinks/shared_preferences_linux/lib/
+    - linux/flutter/ephemeral/.plugin_symlinks/shared_preferences_linux/test/
+    - linux/flutter/ephemeral/.plugin_symlinks/shared_preferences_linux/example/
+    - linux/flutter/ephemeral/.plugin_symlinks/shared_preferences_linux/example/lib/
+    - linux/flutter/ephemeral/.plugin_symlinks/shared_preferences_linux/example/linux/
+    - linux/flutter/ephemeral/.plugin_symlinks/shared_preferences_linux/example/linux/flutter/
+    - linux/flutter/ephemeral/.plugin_symlinks/shared_preferences_linux/example/test_driver/
+    - linux/flutter/ephemeral/.plugin_symlinks/shared_preferences_linux/example/integration_test/
+    - macos/
+    - macos/Runner/
+    - macos/Runner/Configs/
+    - macos/Runner/Base.lproj/
+    - macos/Runner/Assets.xcassets/
+    - macos/Runner/Assets.xcassets/AppIcon.appiconset/
+    - macos/Flutter/
+    - macos/Flutter/ephemeral/
+    - macos/RunnerTests/
+    - macos/Runner.xcodeproj/
+    - macos/Runner.xcodeproj/xcshareddata/
+    - macos/Runner.xcodeproj/xcshareddata/xcschemes/
+    - macos/Runner.xcodeproj/project.xcworkspace/
+    - macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/
+    - macos/Runner.xcworkspace/
+    - macos/Runner.xcworkspace/xcshareddata/
+    - android/
+    - android/app/
+    - android/app/src/
+    - android/app/src/main/
+    - android/app/src/main/res/
+    - android/app/src/main/res/xml/
+    - android/app/src/main/res/values/
+    - android/app/src/main/res/drawable/
+    - android/app/src/main/res/mipmap-hdpi/
+    - android/app/src/main/res/mipmap-mdpi/
+    - android/app/src/main/res/drawable-v21/
+    - android/app/src/main/res/mipmap-xhdpi/
+    - android/app/src/main/res/values-night/
+    - android/app/src/main/res/mipmap-xxhdpi/
+    - android/app/src/main/res/mipmap-xxxhdpi/
+    - android/app/src/main/java/
+    - android/app/src/main/java/io/
+    - android/app/src/main/java/io/flutter/
+    - android/app/src/main/java/io/flutter/plugins/
+    - android/app/src/main/kotlin/
+    - android/app/src/main/kotlin/com/
+    - android/app/src/main/kotlin/com/owc/
+    - android/app/src/main/kotlin/com/owc/flutter_basics/
+    - android/app/src/debug/
+    - android/app/src/profile/
+    - android/.idea/
+    - android/gradle/
+    - android/gradle/wrapper/
+    - android/.gradle/
+    - android/.gradle/7.6.3/
+    - android/.gradle/7.6.3/checksums/
+    - android/.gradle/7.6.3/fileHashes/
+    - android/.gradle/7.6.3/fileChanges/
+    - android/.gradle/7.6.3/vcsMetadata/
+    - android/.gradle/7.6.3/executionHistory/
+    - android/.gradle/7.6.3/dependencies-accessors/
+    - android/.gradle/vcs-1/
+    - android/.gradle/buildOutputCleanup/
+    - windows/
+    - windows/runner/
+    - windows/runner/resources/
+    - windows/flutter/
+    - windows/flutter/ephemeral/
+    - windows/flutter/ephemeral/.plugin_symlinks/
+    - windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/
+    - windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/lib/
+    - windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/test/
+    - windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/example/
+    - windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/example/lib/
+    - windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/example/windows/
+    - windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/example/windows/runner/
+    - windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/example/windows/runner/resources/
+    - windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/example/windows/flutter/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/lib/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/lib/src/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/test/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/example/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/example/lib/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/example/windows/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/example/windows/runner/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/example/windows/runner/resources/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/example/windows/flutter/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/pigeons/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/windows/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/windows/test/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/windows/include/
+    - windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/windows/include/file_selector_windows/
+    - windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/
+    - windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/lib/
+    - windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/lib/src/
+    - windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/test/
+    - windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/
+    - windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/lib/
+    - windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/windows/
+    - windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/windows/runner/
+    - windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/windows/runner/resources/
+    - windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/windows/flutter/
+    - windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/test_driver/
+    - windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/integration_test/
+    - windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/
+    - windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/lib/
+    - windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/test/
+    - windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/
+    - windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/lib/
+    - windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/windows/
+    - windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/windows/runner/
+    - windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/windows/runner/resources/
+    - windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/windows/flutter/
+    - windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/test_driver/
+    - windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/integration_test/
+    - .dart_tool/
+    - .dart_tool/dartpad/
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
